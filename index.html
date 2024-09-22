@@ -122,7 +122,9 @@
                 <button type="submit">Enviar</button>
                 <input type="hidden" name="_next" value="https://axelpereyra965.github.io/Porfolio/">
                 <input type="hidden" name="_captcha" value="false">
-            </div> 
+                <div id="mensajeEnviando" class="enviando">Enviando...</div>
+            </div>
+             
         </form>
     </section>
 
@@ -173,6 +175,15 @@
     
         document.getElementById("linkContacto").addEventListener("click", function() {
             smoothScroll("Contacto");
+        });
+
+
+        document.querySelector("form").addEventListener("submit", function(event) {
+            // muestra la animacion
+             document.getElementById("mensajeEnviando").style.display = "block";
+    
+            // Deshabilita el boton de enviar para evitar multiples envios
+            event.target.querySelector("button[type='submit']").disabled = true;
         });
     </script>
 </body>

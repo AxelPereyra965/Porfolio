@@ -589,3 +589,19 @@ body {
         height: 40px;
     }
 }
+
+/*animacion*/
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.enviando {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    animation: fadeInOut 1s infinite;
+}
+
