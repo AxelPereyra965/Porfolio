@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
@@ -102,15 +102,15 @@
             </div>
         </div>
         
-        <form action="mailto:axelpereyra965@hotmail.com" method="post" class="FormularioContacto">
+        <form action="https://formsubmit.co/axelpereyra_la12@hotmail.com" method="POST" class="FormularioContacto">
             <div class="SeccionFormulario">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
     
             <div class="SeccionFormulario">
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
+                <label for="Email">Correo Electronico:</label>
+                <input type="text" id="Email" name="Email" required>
             </div>
     
             <div class="SeccionFormulario">
@@ -120,7 +120,9 @@
     
             <div class="formulario">
                 <button type="submit">Enviar</button>
-            </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+            </div> 
         </form>
     </section>
 
