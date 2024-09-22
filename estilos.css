@@ -1,0 +1,591 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ----------------------header ---------------------------*/
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 65px; 
+    width: 100%; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    background-color: #333; 
+    z-index: 1000; 
+}
+
+header nav {
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header nav ul li {
+    margin: 0 15px; 
+}
+
+header nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: color 0.3s; 
+}
+
+header nav ul li a:hover {
+    color: #ff6600; 
+}
+
+
+/* ----------------------presentacion ---------------------------*/
+.cara{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.Presentacion {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    
+    background-color: #303030;
+    color: white;
+}
+
+.CajaCentral{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 65%;
+}
+.CajaCara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #424242;
+}
+
+
+.CajaPresentacion{
+    display: flex;
+    background-color: #F2F2F2;
+    color: #303030;
+    position: relative;
+}
+
+.CajaPresentacion .fondo {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    padding: 0; 
+    margin: 0; 
+    position: relative;
+}
+
+
+.CajaPresentacion h1 {
+    position: absolute; 
+    color: white; 
+    z-index: 1;
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    font-size: 2em; 
+}
+
+.CajaPresentacion h3 {
+    position: absolute;
+    color: white; 
+    z-index: 1; /* Asegura que el texto este por encima de la imagen */
+    top: 80px; 
+    left: 50%; 
+    transform: translateX(-50%); /* Ajusta para centrar completamente */
+    text-align: center; 
+    font-size: 1.5em;
+}
+
+
+.CajaPresentacion h3 {
+    font-size: 1.5em; 
+    margin-top: 10px; 
+    color: #ff6600
+}
+
+.CajaPresentacion h1 {
+    top: 30%; 
+    font-size: 2em; 
+  
+}
+
+.CajaPresentacion h3 {
+    top: 45%; /*para que este debajo del h1 */
+    font-size: 1.5em;
+    
+}
+
+/* ----------------------sobre mi ---------------------------*/
+
+.SobreMi {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    text-align: center; 
+}
+
+.SobreMi h1 {
+    font-size: 2.5em; 
+    color: white; 
+}
+
+.SobreMi .TextoPresentacion {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.SobreMi p {
+    font-size: 1.2em; 
+    font-family: 'Courier New', Courier, monospace; 
+    color: white; 
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* ----------------------formacion ---------------------------*/
+
+.Formacion{
+    background-color: #303030;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+.Formacion h2{
+    font-size: 2.5em;
+    font-family: 'Courier New',
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+}
+
+.Formacion .icono {
+    height: 90px;
+}
+
+.Formacion .ListaTecnologias {
+    display: flex;
+    justify-content: space-between; 
+    width: 50%; 
+}
+
+/* ----------------------Trabajos---------------------------*/
+
+.Trabajos{
+    background-color: #424242;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.Trabajos h2 {
+    font-size: 2.5em;
+    font-family: 'Courier New',
+}
+
+.proyectos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.Carta {
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: solid #F2F2F2 1px; 
+}
+
+.Carta:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); 
+    border-color: #ff6600; 
+}
+
+.Carta img {
+    width: 100%;
+}
+
+.Carta a, footer a {
+    color: white;
+}
+
+.Carta .icono {
+    width: 32px;
+    height: 32px;
+}
+
+
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+/* ----------------------contacto---------------------------*/
+
+.Contacto {
+    background-color: #303030;
+    padding: 40px;
+    text-align: center;
+}
+
+.Contacto h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ContactoInfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.IconoContacto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.IconoContacto img {
+    height: 30px;
+}
+
+.IconoContacto p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.FormularioContacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.SeccionFormulario {
+    margin-bottom: 15px;
+}
+
+.SeccionFormulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #303030;
+}
+
+.SeccionFormulario input,
+.SeccionFormulario textarea {
+    width: 90%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #303030;
+    margin: 0 auto;
+    display: block; 
+}
+
+.SeccionFormulario textarea {
+    resize: none; 
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #cc5200;
+}
+
+
+/* ----------------------footer---------------------------*/
+
+footer { /*  este es el futer */
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.futer { /*  esta la clase futer */
+    width: 30%;
+    display: flex;
+    justify-content: center;   
+}
+
+.futer a {
+    display: inline-block; 
+    transition: all 0.10s ease;  
+}
+
+.futer a:hover img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.red-social {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: #424242;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease; /* Ejemplo de transición */
+}
+
+body {
+    transition: all 0.5s ease; /* Transición para cambios generales */
+}
+
+/* ----------------------responsive---------------------------*/
+
+@media (max-width: 1000px) {
+    html, body {
+        overflow-x: hidden; /* Evitar scroll horizontal */
+        
+    }
+
+    body {
+        background-color: #333;
+    }
+
+    /*-------------------------------header--------------------------------------- */
+    header {
+        display: none;
+    }
+
+    /*-------------------------------inicio--------------------------------------- */
+    .Presentacion {
+        margin: 0;
+        padding: 0;
+    }
+
+    .CajaCentral {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .CajaCara {
+        width: 100%;
+        height: 50%;
+    }
+
+    .cara { /* foto de perfil */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 20%; 
+    }
+    
+    .CajaPresentacion {
+        width: 100%;
+        height: 50%;
+    }
+
+    .CajaPresentacion h1 {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .fondo { /* foto de fondo */
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-------------------------------sobre mi--------------------------------------- */
+    .SobreMi {
+        height: 100%;
+    }
+
+    .TextoPresentacion{
+        width: 70%;  
+    }
+
+    .SobreMi .TextoPresentacion{
+        margin-bottom: 5px;
+    }
+
+    /*-------------------------------tecnologias--------------------------------------- */
+    .Formacion {
+        width: 100%; 
+        height: 100%;
+    }
+    
+    .ListaTecnologias {
+        margin: 0;
+        padding: 0;
+        align-items: center; 
+    }
+
+    .icono {
+        width: auto;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    /*-------------------------------trabajos--------------------------------------- */
+    .Trabajos {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .proyectos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Carta {
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 0%;
+    
+    }
+    
+    .red-social {
+        margin: 0 5px;
+    }
+
+    /*-------------------------------contacto--------------------------------------- */
+    .Contacto {
+        
+        margin: 0;
+        padding: 0;
+    }
+
+    .ContactoInfo{
+        display: flex;
+        justify-content: center;
+        gap: 1px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .Contacto h2{
+        margin: 0%;
+        padding: 0%;
+        margin-top: 10px;
+    }
+
+    .FormularioContacto{
+        width: 70%;
+    }
+
+
+
+    /*-------------------------------footer--------------------------------------- */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #303030;
+        width: 100%;
+    }
+
+    footer a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Adaptación de las secciones */
+    section {
+        padding: 20px;
+        width: 100vw; /*-----vh para que no exeda el ancho de la pantalla-----*/
+    }
+
+    /* Centrando los iconos de tecnologías */
+    .ListaTecnologias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ListaTecnologias img {
+        width: 120px;
+        height: auto;
+        margin: 10px;
+    }
+
+    /* Footer iconos horizontales */
+    .futer {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .futer a {
+        display: inline-block;
+    }
+
+    .futer img.red-social {
+        width: 40px;
+        height: 40px;
+    }
+}

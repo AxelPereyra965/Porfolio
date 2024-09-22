@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Presentacion" id="linkInicio">Inicio</a></li>
+                <li><a href="#SobreMi" id="linkSobremi">Sobre mí</a></li>
+                <li><a href="#Formacion" id="linkTecnologias">Tecnologías</a></li>
+                <li><a href="#Trabajos" id="linkProyectos">Proyectos</a></li>
+                <li><a href="#Contacto" id="linkContacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Presentacion" id="Presentacion">
+        <div class="CajaCentral">
+            <div class="CajaCara">
+                <img class="cara" src="Recursos/Imagenes/Img-Perfil.jpeg">            
+            </div>
+            <div class="CajaPresentacion">
+                <div> 
+                    <img class="fondo" src="Recursos/Imagenes/fondo.avif" alt=""> 
+                    <h1>&lt;/pereyra axel&gt;</h1>
+                    <h3>Desarrollador Backend </h3> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="SobreMi" id="SobreMi">
+        <h1>&lt;/Sobre mí&gt;</h1>
+        <p class="TextoPresentacion">
+            Me llamo Axel Pereyra, tengo 25 años y soy de Buenos Aires, Argentina.<br>
+            Estoy cursando el segundo año de la Tecnicatura en Programación<br>
+            en la Universidad Tecnológica Nacional (UTN).<br>
+            <br>
+            Mi objetivo es convertirme en un desarrollador profesional.<br>
+            Me considero una persona que busca constantemente nuevos desafíos y<br>
+            que está preparada para trabajar en una empresa.<br>
+            Estoy dispuesto a dar todo de mí para ayudar y crecer profesionalmente.<br>  
+        </p>
+    </section>
+
+    <section class="Formacion" id="Formacion">
+        <h2>&lt;/Tecnologías&gt;</h2>
+        <div class="ListaTecnologias">
+            <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="icono" alt="">
+            <img src="https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/dotnetCore.component.complex-narrative-xl.ts=1691583540732.png/content/adobe-cms/mx/es/products/instana/supported-technologies/dotnet-core-monitoring/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative/logoimage" class="icono" alt="">
+            <img src="https://img.icons8.com/color/480/microsoft-sql-server.png" class="icono" alt="">
+            <img src="Recursos/iconos/github.png" alt="">
+        </div>
+        <div class="ListaTecnologias">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5ryTY9VShCV5uJWhoBXkcxxlFB8O5bbxGA&s" class="icono" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" class="icono" alt="">
+            <img src="https://w7.pngwing.com/pngs/588/733/png-transparent-js-logo-javascript.png" class="icono" alt="">
+            <img src="Recursos/iconos/git.png" alt="">
+        </div> 
+    </section>
+
+    <section class="Trabajos" id="Trabajos">
+        <h2>&lt;/Proyectos&gt;</h2>
+        <div class="proyectos">
+            <div class="Carta">
+                <h3>Aplicación para <br> gestionar inventarios</h3>
+                <img src="Recursos/Imagenes/PuntoDeVenta.png" alt="Aplicación para gestionar inventarios">
+                <p>
+                    Tecnologías utilizadas <br>
+                    <img src="Recursos/iconos/icons8-c-sharp-logo-48.png" alt="C# Logo" class="icono">
+                    <img src="https://img.icons8.com/color/48/microsoft-sql-server.png" alt="Microsoft SQL Server Logo" class="icono">
+                    <img src="https://img.icons8.com/color/48/net-framework.png" alt=".NET Framework Logo" class="icono">
+                </p>
+                <a href="https://github.com/Axelpereyra12/App_ComercioLocal" target="_blank">Ver</a>
+            </div>
+            <div class="Carta">
+                <h3>Aplicación para emprendimiento</h3>
+                <img src="Recursos/Imagenes/TiendaRopa.png" alt="Aplicación para emprendimiento">
+                <p>
+                    Tecnologías utilizadas <br>
+                    <img src="https://img.icons8.com/fluency/48/c-plus-plus-logo.png" alt="C++ Logo" class="icono">
+                </p>
+                <a href="https://github.com/AxelPereyra965/tp_lab2" target="_blank">Ver</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contacto" id="Contacto">
+        <h2>&lt;/Contactame&gt;</h2>
+        <div class="ContactoInfo">
+            <div class="IconoContacto">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Teléfono">
+                <p>+54 9 11 2251-1625</p>
+            </div>
+            <div class="IconoContacto">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Correo">
+                <p>axelpereyra965@hotmail.com</p>
+            </div>
+        </div>
+        
+        <form action="mailto:axelpereyra965@hotmail.com" method="post" class="FormularioContacto">
+            <div class="SeccionFormulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="SeccionFormulario">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+    
+            <div class="SeccionFormulario">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+    
+            <div class="formulario">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Axel Pereyra.</p>
+        <div class="futer" id="futer">
+            <a href="https://www.linkedin.com/in/axel-pereyra-90946b305/" target="_blank">
+                <img src="Recursos/iconos-footer/Linkedin.png" class="red-social" alt="">
+            </a>
+            <a href="https://github.com/AxelPereyra965?tab=repositories" target="_blank">
+                <img src="Recursos/iconos-footer/github.png" class="red-social" alt="">
+            </a>
+            <a href="mailto:axelpereyra965@hotmail.com.com" target="_blank">
+               <img src="Recursos/iconos-footer/outlook.png" class="red-social" alt="">
+            </a>
+            <a href="https://wa.me/1122511625" target="_blank">
+                <img src="Recursos/iconos-footer/whatsapp.png" class="red-social" alt="">
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        function smoothScroll(target) {
+            const element = document.getElementById(target);
+            const offset = element.getBoundingClientRect().top + window.scrollY;
+    
+            window.scrollTo({
+                top: offset,
+                behavior: "smooth"
+            });
+        }
+    
+        document.getElementById("linkInicio").addEventListener("click", function() {
+            smoothScroll("Presentacion");
+        });
+    
+        document.getElementById("linkSobremi").addEventListener("click", function() {
+            smoothScroll("SobreMi");
+        });
+    
+        document.getElementById("linkTecnologias").addEventListener("click", function() {
+            smoothScroll("Formacion");
+        });
+    
+        document.getElementById("linkProyectos").addEventListener("click", function() {
+            smoothScroll("Trabajos");
+        });
+    
+        document.getElementById("linkContacto").addEventListener("click", function() {
+            smoothScroll("Contacto");
+        });
+    </script>
+</body>
+</html>
+
+
